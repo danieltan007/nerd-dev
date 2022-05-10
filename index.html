@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" id="index">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>NerDev - Home</title>
+     <link rel="icon" href="logo.png">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+     <link href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" rel="Stylesheet"
+               type="text/css" />    
+     <script src="https://code.jquery.com/jquery-3.5.1.js"
+          integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+          integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+          crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+          integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+          crossorigin="anonymous"></script>
+
+     <style>
+          li.active{
+               background: blue;
+          }
+
+          .animate{
+               transition: 0.5s ease-in-out;
+          }
+          .current{
+               border-bottom: 3px solid black;
+          }
+
+          .bar1, .bar2, .bar3 {
+          width: 40px;
+          height: 5px;
+          background-color: #333;
+          margin: 6px 0;
+          transition: 0.5s;
+          }
+
+          .change .bar1 {
+          -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+          transform: rotate(-45deg) translate(-9px, 6px);
+          }
+
+          .change .bar2 {opacity: 0;}
+
+          .change .bar3 {
+          -webkit-transform: rotate(45deg) translate(-8px, -8px);
+          transform: rotate(45deg) translate(-8px, -8px);
+          }
+
+          @media screen and (max-width:600px){
+               .col{
+               width: 100%;
+               display: block;
+               margin-bottom:20px;
+               padding-bottom: 10px;
+               margin-top: 10px;
+               }
+          }
+
+          body {
+          overflow-y: scroll;
+          }
+
+          .navbar {
+          font-size: 21px;
+          }
+
+     </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100">    
+<nav class="navbar navbar-expand-md bg-primary navbar-dark fixed-top">
+     <img src="logo.png" width="30" height="30" class="d-inline-block">
+     <a class="navbar-brand ">Nerd Developer</a>
+     <button class="navbar-toggler" onclick="myFunction(this)" data-toggle="collapse" data-target="#toggle">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+     </button>
+     <div class="collapse navbar-collapse animate" id="toggle">
+          <ul class="navbar-nav">
+               <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+               </li>
+               <li class="nav-item">
+                    <a class="nav-link" href="#services">Our Services</a>
+               </li>
+               <!-- <li class="nav-item">
+                    <a class="nav-link" href="#team">Our Team</a>
+               </li> -->
+               <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+               </li>
+               <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+               </li>
+          </ul>
+     </div>
+</nav>
+
+<div class="jumbotron">
+     <div class="container" id="home">
+          <div class="card text-white bg-primary mt-5">
+               <div style="text-align: center;">
+                    <img class="card-img-top" src="logo.png" style="height: 300px; width: 300px;">
+               </div>
+          <div class="card-body">
+          <h4 class="card-title">Hello, We are Nerd Developer!</h4>
+          <p class="card-text">Kami adalah kelompok programming yang terdiri dari 3 orang lulusan IT. Kami merupakan orang yang memiliki passion dibidang teknologi, dan pemrograman, khususnya dibidang pemrograman web. Kami akan memberikan pelayanan yang terbaik kepada Anda agar perusahaan Anda dapat lebih efisien dan meningkatkan kinerja berkat website kami.</p>
+          </div>
+          </div>
+     </div>
+</div>
+
+<br><br><br>
+
+<div class="jumbotron">
+     <div class="container">
+          <h3 align="center">Visi dan Misi</h3>
+          <br>
+          <div class="row">
+               <div class="col">
+                    <div class="card text-white bg-primary">
+                    <img class="card-img-top">
+                    <div class="card-body">
+                    <h4 class="card-title">Visi</h4>
+                    <p class="card-text">Membantu perusahaan dalam membuat website dan sistem yang berkualitas </p>
+                    </div>
+                    </div>
+               </div>
+               <div class="col">
+                    <div class="card text-black bg-light">
+                    <img class="card-img-top">
+                    <div class="card-body">
+                    <h4 class="card-title">Misi</h4>
+                    <p class="card-text">Menciptakan desain website yang menarik serta responsif</p>
+                    <p class="card-text">Membangun brand yang tepercaya bagi konsumen</p>
+                    <p class="card-text">Meningkatkan produktivitas dan ilmu dalam pembuatan website</p>
+                    </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+</div>
+
+<br><br><br>
+
+<div class="jumbotron">
+     <div class="container" id="services">
+          <h2 align="center">Our Services</h2>
+          <br><br>
+          <div class="row">
+               <div class="col">
+                    <div class="card text-left">
+                         <div style="text-align:center;">
+                              <img class="card-img-top m-4" src="desktop.png" style="width: 100px; height: auto;">
+                         </div>
+                         <div class="card-body">
+                         <h4 class="card-title">Sistem Berbasis web</h4>
+                         <p class="card-text" style="text-align: justify;">membuat sistem yang terkomputerisasi dan berbasis web agar bisa diakses dimana saja dan kapan saja. Kami juga menyediakan jasa web berbasis offline</p>
+                         
+                         </div>
+                    </div> 
+               </div>
+               <div class="col">
+                    <div class="card text-left">
+                    <div style="text-align:center;">
+                         <img class="card-img-top m-4" src="landing-page.png" style="width: 100px; height: auto;">
+                    </div>
+                    <div class="card-body">
+                    <h4 class="card-title">Landing Page</h4>
+                    <p class="card-text" style="text-align: justify;">membuat website untuk perusahaan Anda, agar lebih
+                         menjangkau customer, dan terlihat lebih professional</p>
+                    </div>
+                    </div>
+               </div>
+               <div class="col">
+                    <div class="card text-left">
+                    <div style="text-align:center;">
+                         <img class="card-img-top m-4" src="student.png" style="width: 100px; height: auto;">
+                    </div>
+                    <div class="card-body">
+                    <h4 class="card-title">Konsultasi Skripsi</h4>
+                    <p class="card-text" style="text-align: justify;">Kami akan membantu Anda dalam pengerjaan skripsi,
+                         mulai dari judul, program hingga tulisan.</p>
+                    </div>
+                    </div>
+               </div>
+               <div class="col">
+                    <div class="card text-left">
+                    <div style="text-align:center;">
+                         <img class="card-img-top m-4" src="dollar-symbol.png" style="width: 100px; height: auto;">
+                    </div>
+                    <div class="card-body">
+                    <h4 class="card-title">Jual Komputer</h4>
+                    <p class="card-text" style="text-align: justify;">kami menyediakan berbagai macam jenis komputer dengan spesifikasi menarik dengan harga yang terjangkau </p>
+                    <p style="border: 3px solid red; text-align: center;">Under Maintenance</p>
+                    </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+</div>
+
+<br><br><br>
+
+<!-- <div class="jumbotron" id="team">
+     <div class="container">
+          <h2 align="center">Our Team</h2>
+          <br><br>
+          <div class="row">
+               <div class="col">
+                    <div class="card text-left">
+                      <div style="text-align:center;">
+                           <img class="card-img-top m-4" src="dollar-symbol.png" style="width: 100px; height: auto;">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Rio Jilly Fungky</h4>
+                        <p class="card-text">CEO, Founder, Database Administrator</p>
+                      </div>
+                    </div>
+               </div>
+               <div class="col">
+                    <div class="card text-left">
+                      <div style="text-align:center;">
+                           <img class="card-img-top m-4" src="dollar-symbol.png" style="width: 100px; height: auto;">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Florensius Daniel Josef</h4>
+                        <p class="card-text">Co-Founder, Head Developer</p>
+                      </div>
+                    </div>
+               </div>
+               <div class="col">
+                    <div class="card text-left">
+                      <div style="text-align:center;">
+                           <img class="card-img-top m-4" src="dollar-symbol.png" style="width: 100px; height: auto;">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Febri</h4>
+                        <p class="card-text">Back-end Developer</p>
+                      </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+</div>
+
+<br><br><br> -->
+
+<div class="jumbotron" id="portfolio">
+     <div class="container">
+          <h2 align="center">Our Portfolio</h2>
+          <br><br>
+          <div class="row">
+               <div class="col">
+                    <div class="card text-left">
+                         <div style="text-align: center;">
+                              <img class="card-img-top mt-3" src="wrench.png" style="width: 100px; height: auto;">
+                         </div>
+                      <div class="card-body">
+                        <h4 class="card-title">TiaraMotor.com</h4>
+                        <p class="card-text">Tiaramotor.com adalah project pertama kami, merupakan sistem kasir, gudang dan laporan yang di jadikan dalam satu sistem.</p>
+                        <p class="card-text">Lihat Demo <a class="btn btn-success" href="#">Demo</a></p>
+                      </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+</div>
+
+<br><br><br>
+
+<div class="jumbotron" id="contact">
+     <div class="container">
+          <h2 align="center">Ingin Bekerja Bersama Kami?</h2>
+          <br><br>
+          <div class="row">
+               <div class="col">
+                    <form action="email.php" method="POST">
+                         <div class="form-group">
+                              <label>Nama :</label>
+                              <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama Anda/Perusahaan">
+                         </div>
+                         <div class="form-group">
+                              <label>Email</label>
+                              <input type="email" class="form-control" name="email" placeholder="Masukkan alamat Email Anda">
+                         </div>
+                         <div class="form-group">
+                              <label>Nomor HP</label>
+                              <input type="text" class="form-control" name="nohp" placeholder="Masukkan nomor telepon yang dapat dihubungi">
+                         </div>
+                         <div class="form-group">
+                              <label>Isi Pesan :</label>
+                              <textarea type="text-area" class="form-control" name="nama" placeholder="Masukkan Pesan"></textarea>
+                         </div>
+                         <button class="btn btn-success" type="submit" name="submit">Kirim</button>
+                    </form>
+               </div>
+               <div class="col">
+                    <a
+                         target="_blank"
+                         href="https://api.whatsapp.com/send?phone=6285157280288&text=Halo%20saya%20ingin%20bertanya%20tentang%20sistem%20Anda."><img
+                              src="chat wa.png" style="height: auto; width: 100%; text-align: right;"></a>
+               </div>
+          </div>
+     </div>
+</div>
+
+<br><br><br>
+
+<div class="jumbotron">
+     <div class="container">
+          <div class="row">
+               <div class="col">
+                    <a class="btn btn-info" href="#index" >Kembali Ke Atas</a>
+                    <br><br>
+                    <img src="copyright.png" style="width: 50px; height: 50px;"> 2020 by Team NerDev
+               </div>
+               <div class="col">
+                    <p>Used Assets</p>
+                    <div style="font-size: 12px;">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+               </div>
+          </div>
+     </div>
+</div>
+
+<script>
+     function myFunction(x) {
+          x.classList.toggle("change");
+     }
+
+     // Select all links with hashes
+     $('a[href*="#"]')
+     // Remove links that don't actually link to anything
+          .not('[href="#"]')
+          .not('[href="#0"]')
+          .click(function(event) {
+          // On-page links
+          if (
+               location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+               &&
+               location.hostname == this.hostname
+          ) {
+               // Figure out element to scroll to
+               var target = $(this.hash);
+               target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+               // Does a scroll target exist?
+               if (target.length) {
+                    // Only prevent default if animation is actually gonna happen
+                    event.preventDefault();
+                    $('html, body').animate({
+                         scrollTop: target.offset().top - 80
+                    }, 1000, function() {
+                         // Callback after animation
+                         // Must change focus!
+                         var $target = $(target);
+                         $target.focus();
+                         if ($target.is(":focus")) { // Checking if the target was focused
+                         return false;
+                         } else {
+                         $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                         $target.focus(); // Set focus again
+                         };
+                    });
+               }
+          }
+     });
+</script>
+</body>
+</html>
